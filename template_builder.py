@@ -7,7 +7,7 @@ def get_amount_rows():
 
 def make_template():
     with open('template.md', 'w') as f:
-        [f.write(f'# {i}\n\n') for i in get_amount_rows()]
+        [f.write(f'# {i}\n- [ ]\n\n') for i in get_amount_rows()]
 
 if "__main__" == __name__:
     make_template()
