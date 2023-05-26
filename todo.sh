@@ -1,5 +1,5 @@
 # ! /usr/bin/zsh
-cd "YOUR PATH/todos/"
+cd "YOUR PATH"
 if [ $# -eq 0 ]
 then
     # arg was not given
@@ -21,9 +21,6 @@ then
     python terminal/show.py $2
     python terminal/add_task.py $2
 
-elif [ $1 = "get-started" ]
-then 
-    python get_started.py
 else
     # plan to given date
     python terminal/plan.py $1 $2
